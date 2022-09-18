@@ -1,1 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://www.fontspace.com/buffied-font-f4051');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+/* Header Section */
+.header h1 {
+  font-family:  'montserrat', sans-serif;
+  color: #171717;
+  padding: 2rem;
+  text-align: center;
+  font-size: 4rem;
+}
+/* Search Section */
+.search {
+  text-align: center;
+}
+.search label {
+  font-size: 1.5rem;
+}
+.search input {
+  padding: 0.3rem;
+  margin-right: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.search input[type=submit] {
+  display: block;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 37%;
+  margin-top: 2rem;
+  width: 25%;
+}
+/* Error Section */
+#error p {
+  text-align: center;
+  font-weight: 600;
+}
+#error {
+  background-color: #dc2626;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+/* Episode Information Section */
+#episode-information {
+  width: 75%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+#episode-information #title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+#episode-information #season-ep, #episode-information #plot {
+  text-align: center;
+  margin-top: 1rem;
+}
+#episode-information #airdate, #episode-information #director, #episode-information #quote, #episode-information #eptrivia {
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+} 
+#episode-information #imdblink {
+  text-align: center;
+  padding: 1rem;
+  margin-left: 40%;
+}
+/* Footer */
