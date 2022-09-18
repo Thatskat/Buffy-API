@@ -6,18 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buffy Episode API</title>
   <!-- Flaticon -->
-  <!-- <a href="https://www.flaticon.com/free-icons/vampire" title="vampire icons">Vampire icons created by Dooder - Flaticon</a> -->
   <link rel="icon" type="z-image" href="./icon/buffy-api-icon.svg">
   <!-- StyleSheets -->
   <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-  <h1>Buffy Episode API</h1>
-<label for="season">Season</label>
-<input type="number" id="season" min="1" max="7">
-<label for="epnumber">Episode Number</label>
-<input type="number" id="epnumber" min="1" max="22">
-<input type="submit" id="submitbtn">
+  <!-- Header Section -->
+  <section class="header">
+    <h1>Buffy Episode API</h1>
+  </section>
+  <!-- /Header Section -->
+  <!-- Input-Search Section -->
+  <section class="search">
+    <label for="season">Season</label>
+    <input type="number" id="season" min="1" max="7">
+    <label for="epnumber">Episode Number</label>
+    <input type="number" id="epnumber" min="1" max="22">
+    <input type="submit" id="submitbtn">
+  </section>
+<!-- /Input-Search Section -->
+
+
 
 <!-- Error Section -->
 <div id="error"><p>Oops - Something went wrong 😥 Please try again</p></div>
@@ -34,6 +43,14 @@
   <p id="eptrivia">Trivia</p>
   <p><a id="imdblink" href="" target="_blank">IMDb Episode Link</a></p>
 </div>
+
+<!-- Footer -->
+<footer>
+  <p>Buffy The Vampire Slayer Episode API</p>
+  <p>Credits:</p>
+  <p><a target="_blank" href="https://www.flaticon.com/free-icons/vampire" title="vampire icons">Vampire icons created by Dooder - Flaticon</a></p>
+  <p><a target="_blank" href="https://buffy-the-vampire-slayer-api.herokuapp.com/">Buffy The Vampire Slayer API Link</a></p>
+</footer>
 
   <script src="./buffy.js"></script>
 </body>
