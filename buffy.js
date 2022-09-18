@@ -24,8 +24,23 @@ const IMDB = 'https://www.imdb.com/title/tt0118276/?';
 episodeinformation.style.display = "none";
 errorMessage.style.display = "none";
 
-btn.addEventListener("click", EpisodeFacts);
+btn.addEventListener("click", Search);
 
-async function EpisodeFacts () {
-  const res = await fetch("")
+function Search() {
+ const seasonQuery = season.value;
+ const episodeQuery = episode.value;
+ findData(seasonQuery, episodeQuery);
+ season.value = "";
+ episode.value = "";
+}
+
+async function findData(seasonQuery, episodeQuery) {
+  try {
+    const res = await fetch(`${apiURL}${apiEpisode}${episodeQuery}${apiSeason}${seasonQuery}`);
+    const json = await res.json();
+    errorMessage.style.display = "none";
+    displayEpisode(json);
+  } catch (error) {
+    errorMessage.style.display = "block";
+  }
 }
