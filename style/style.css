@@ -38,7 +38,7 @@ h2 {
 }
 .search input {
   padding: 0.3rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   font-family: 'Montserrat', sans-serif;
   border-radius: 5px;
   margin-left: 0.1rem;
@@ -47,6 +47,8 @@ h2 {
   font-size: 1.2rem;
   border-color: #a1a1aa;
   transition: all 0.3s ease-in-out;
+  background-color: #d4d4d8;
+  text-align: center;
 }
 .search input:focus {
   transform: scale(1.01);
@@ -76,9 +78,9 @@ h2 {
   font-weight: 600;
 }
 #error {
-  background-color: #dc2626;
+  background-color: #b91c1c;
   padding: 2rem;
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
 /* Episode Information Section */
 #episode-information {
