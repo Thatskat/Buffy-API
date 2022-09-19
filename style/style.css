@@ -10,7 +10,7 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #e5e7eb;
+  background-color: #fafafa;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h2 {
 /* Header Section */
 .header h1 {
   font-family:'buffied', 'montserrat', sans-serif;
-  color: #171717;
+  color: #18181b;
   padding: 2rem;
   text-align: center;
   font-size: 4rem;
@@ -34,12 +34,23 @@ h2 {
 }
 .search label {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 .search input {
   padding: 0.3rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
   font-family: 'Montserrat', sans-serif;
   border-radius: 5px;
+  margin-left: 0.1rem;
+  height: 2.5rem;
+  width: 5rem;
+  font-size: 1.2rem;
+  border-color: #a1a1aa;
+  transition: all 0.3s ease-in-out;
+}
+.search input:focus {
+  transform: scale(1.01);
+  border-color: #a1a1aa;
 }
 .search input[type=submit] {
   display: block;
@@ -48,7 +59,16 @@ h2 {
   margin-left: 37%;
   margin-top: 2rem;
   width: 25%;
+  background-color: #111827;
+  text-decoration: none;
   border-radius: 5px;
+  color: #d4d4d8;
+  transition: all 0.3s ease-in-out;
+}
+.search input[type=submit]:hover {
+  background-color: #b91c1c;
+  color: #111827;
+  transform: scale(1.01);
 }
 /* Error Section */
 #error p {
@@ -62,7 +82,7 @@ h2 {
 }
 /* Episode Information Section */
 #episode-information {
-  width: 85%;
+  width: 88%;
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -84,28 +104,79 @@ h2 {
   margin-top: 0.7rem;
   margin-left: 1rem;
 } 
+#episode-information #eptrivia {
+margin-bottom: 2rem;
+}
 #episode-information #imdblink {
   text-align: center;
   padding: 1rem;
-  margin-left: 40%;
+  margin-left: 42%;
+  background-color: #111827;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #d4d4d8;
+  transition: all 0.3s ease-in-out;
+}
+#episode-information #imdblink:hover {
+  background-color: #b91c1c;
+  color: #111827;
+  transform: scale(1.1);
 }
 /* Footer */
 footer {
   text-align: center;
   padding: 1rem;
+  position: fixed;
+  margin-top: 25rem;
+  background-color: #111827;
+  width: 100%;
+  display: inline;
+  color: #a1a1aa;
 }
-footer p {
-  margin-top: 0.6rem;
+footer table th {
+ padding-right: 7rem;
 }
+footer table {
+  margin-left: 8rem;
+}
+footer table th a {
+  text-decoration: none;
+  color: #a1a1aa;
+  transition: all 0.3s ease-in-out;
+}
+footer table th a:hover {
+  color: #b91c1c;
+  transform: scale(1.1);
+}
+
 /* Moon Icon */
 .moon {
-  background-color: #9ca3af;
+  background-color: #d4d4d8;
   padding: 2rem;
   border-radius: 100%;
   width: 50%;
-  height: 25rem;
+  height: 40rem;
   margin-left: 6rem;
-  z-index: 0;
+  z-index: -2;
   position: fixed;
-  display: none;
+  left: 1rem;
+  top: 1rem;
+}
+.tinymoon {
+  z-index: -1;
+  position: fixed;
+  left: 40rem;
+  top: 8rem;
+  padding: 4rem;
+  border-radius: 100%;
+  background-color: #a1a1aa;
+}
+.smallermoon {
+  z-index: -1;
+  position: fixed;
+  left: 45rem;
+  top: 17rem;
+  padding: 2rem;
+  border-radius: 100%;
+  background-color: #a1a1aa;
 }
