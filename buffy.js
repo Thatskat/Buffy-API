@@ -39,6 +39,7 @@ async function findData(seasonQuery, episodeQuery) {
     displayEpisode(json);
   } catch (error) {
     errorMessage.style.display = "block";
+    episodeinformation.style.display = "none";
   }
 }
 
